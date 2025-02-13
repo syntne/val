@@ -1,10 +1,11 @@
 body {
-    background-color: #fce4e4;
+    background-color: #fce4ec;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column;
 }
 
 .container {
@@ -14,67 +15,46 @@ body {
 
 .valentines {
     position: relative;
-    width: 300px;
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .envelope {
     position: relative;
     width: 300px;
     height: 200px;
-    background: #f28e8e;
-    margin: auto;
+    background-color: #e57373;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    clip-path: polygon(0% 25%, 100% 25%, 100% 100%, 0% 100%);
+    overflow: hidden;
 }
 
 .card {
     position: absolute;
-    width: 260px;
-    height: 180px;
-    background: #faebd7;
-    top: -10px;
+    width: 90%;
+    height: 90%;
+    background-color: #ffeb3b;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
+    flex-direction: column;
+    transform: translateY(-10px);
 }
 
 .text {
-    font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.5;
-    word-wrap: break-word;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #5d4037;
+    margin: 0;
 }
 
-.front {
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    background: #e57373;
-    clip-path: polygon(0% 25%, 100% 25%, 50% 100%);
-    top: 0;
-}
-
-.small-heart {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.6);
-    background: red;
-    width: 30px;
-    height: 30px;
-    clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 50% 80%, 20% 100%, 0% 35%);
-}
-
-iframe {
+.spotify-player {
     position: fixed;
     bottom: 10px;
     left: 10px;
-    width: 320px;
-    height: 80px;
+    border-radius: 12px;
 }
